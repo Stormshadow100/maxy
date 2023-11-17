@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha256-UVqJ6G+weY5NlFsUB/gUEFkgQUsVHDJsl5qNfJz6iIQ=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/2.jpg" alt="Your Name" class="profile-photo">
+            <h1>Welcome to My Journey</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="childhood.html">Childhood</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="aspirations.html">Aspirations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="intro">
+        <h2 class="animate-me">Skills and Talents</h2>
+        <p>
+            A cornerstone of my identity lies in my ability to tackle challenges with a problem-solving mindset. Whether it's deciphering complex coding issues, navigating the intricacies of web development, or analyzing the dynamic landscape of forex trading, problem-solving is at the core of my skill set.
+        </p>
+        <p>
+            Web development, in particular, has become a canvas for me to blend creativity with technical proficiency. The process of crafting functional and visually appealing websites allows me to express my passion for technology while continuously honing my skills in coding languages, design principles, and user experience.
+        </p>
+        <p>
+            Beyond the digital realm, my proficiency extends to the world of forex trading. The intricate understanding of market trends, financial analysis, and strategic decision-making has become a parallel skill set that I actively cultivate. It not only serves as a dynamic area of interest but also reflects my commitment to continuous learning and adaptability in diverse fields.
+        </p>
+        <p>
+            In the realm of hobbies, I find joy and relaxation in gaming, exploring virtual worlds, and engaging with the latest technologies in the gaming industry. Additionally, my love for storytelling leads me to indulge in watching movies and documentaries. The narratives and perspectives offered in these visual mediums serve as a source of inspiration and often spark new ideas in my approach to problem-solving and creativity.
+        </p>
+        <p>
+            As I navigate through the intersections of skills, talents, and hobbies, I am driven by the belief that each facet contributes uniquely to my holistic development. From coding lines of web development to making strategic decisions in forex trading and immersing myself in the narratives of movies and documentaries, each pursuit is a brushstroke in the canvas of my multifaceted identity.
+        </p>
+    </section>
+    
+    <!-- Other content sections go here -->
+    <footer>
+        <p>&copy; 2023 Maxwel Okumu</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to animate elements with fade-in
+            function animateElements() {
+                // Select elements you want to animate
+                const elementsToAnimate = document.querySelectorAll('.animate-me');
+    
+                // Iterate through each element and apply the animation
+                elementsToAnimate.forEach(function(element, index) {
+                    anime({
+                        targets: element,
+                        opacity: [0, 1], // Fade-in animation
+                        translateY: [20, 0], // You can add more properties for different animations
+                        easing: 'easeInOutQuad',
+                        duration: 800, // Animation duration in milliseconds
+                        delay: index * 200, // Delay each element for a staggered effect
+                    });
+                });
+            }
+    
+            // Call the animateElements function when the page is loaded
+            animateElements();
+        });
+    </script>
+    
+</body>
+</html>

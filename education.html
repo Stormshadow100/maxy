@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha256-UVqJ6G+weY5NlFsUB/gUEFkgQUsVHDJsl5qNfJz6iIQ=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/2.jpg" alt="Your Name" class="profile-photo">
+            <h1>Welcome to My Journey</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="childhood.html">Childhood</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="aspirations.html">Aspirations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="intro">
+        <h2 class="animate-me">Educational Journey</h2>
+        <p>
+            My educational journey has been a blend of academic excellence, personal achievements, and a passion for learning that has shaped my character. It all began in the vibrant classrooms of St. Mary's school montessory, where I was honored with the title of the best student. This early recognition fueled my drive for academic success and set the tone for the educational chapters that followed.
+        </p>
+        <p>
+            Transitioning to primary school in Rambira, I not only excelled academically but also discovered a hidden talent in athletics. The thrill of the track, the camaraderie with teammates, and the joy of competition added a dynamic dimension to my educational experience. Athletics not only became a source of personal achievement but also instilled in me qualities of discipline and perseverance that extended beyond the sports field.
+        </p>
+        <p>
+            High school marked a pivotal period where my love for technology found a more structured path. Computer studies became a subject I eagerly looked forward to, transforming my curiosity into a dedicated pursuit of knowledge. The complexities of coding, the logic of algorithms, and the vast possibilities of the digital world ignited a passion that would later lead me to pursue IT at the tertiary level.
+        </p>
+        <p>
+            Beyond the academic realm, the lessons learned in pre-primary, the triumphs in athletics during primary school, and the fascination with computer studies in high school collectively molded me into a well-rounded individual. These experiences laid a robust foundation for my current pursuits as an IT student at Zetech University.
+        </p>
+        <p>
+            As I reflect on my educational journey, I am grateful for the diverse experiences that have not only enriched my academic life but have also contributed significantly to my personal growth.
+        </p>
+    </section>
+    
+    <!-- Other content sections go here -->
+    <footer>
+        <p>&copy; 2023 Maxwel Okumu</p>
+    </footer>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to animate elements with fade-in
+            function animateElements() {
+                // Select elements you want to animate
+                const elementsToAnimate = document.querySelectorAll('.animate-me');
+    
+                // Iterate through each element and apply the animation
+                elementsToAnimate.forEach(function(element, index) {
+                    anime({
+                        targets: element,
+                        opacity: [0, 1], // Fade-in animation
+                        translateY: [20, 0], // You can add more properties for different animations
+                        easing: 'easeInOutQuad',
+                        duration: 800, // Animation duration in milliseconds
+                        delay: index * 200, // Delay each element for a staggered effect
+                    });
+                });
+            }
+    
+            // Call the animateElements function when the page is loaded
+            animateElements();
+        });
+    </script>
+</body>
+</html>

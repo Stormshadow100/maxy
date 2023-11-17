@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Maxwel - Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha256-UVqJ6G+weY5NlFsUB/gUEFkgQUsVHDJsl5qNfJz6iIQ=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/2.jpg" alt="Your Name" class="profile-photo">
+            <h1>Welcome to My Journey</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="childhood.html">Childhood</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="aspirations.html">Aspirations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="intro">
+        <h2 class="animate-me">About Me</h2>
+        <p>
+            Greetings! I am Maxwel Onyango, an enthusiastic IT student currently in my second year at Zetech University. My academic journey in the dynamic field of Information Technology has ignited a profound passion for technology, and I am eager to contribute meaningfully to the ever-evolving landscape.
+        </p>
+        <p>
+            My dedication to excellence is evident in my pursuit of becoming a leading cybersecurity engineer in the country. With a keen interest in the intricate world of cybersecurity, I am committed to mastering the art and science of securing digital environments. My goal is not only to excel in my academic endeavors but also to actively contribute to the broader tech community.
+        </p>
+        <p>
+            Beyond my academic pursuits, I am driven by the desire to uplift and empower fellow tech enthusiasts. I envision a future where knowledge is shared, and individuals can harness their potential to become the best versions of themselves. Through mentorship and collaboration, I aim to play a role in fostering a community of skilled professionals who are passionate about making a positive impact in the world of technology.
+        </p>
+        <p>
+            Join me on this exciting journey as I document my experiences, insights, and achievements. Together, let's explore the boundless possibilities that the realm of technology offers and strive towards a future where innovation and collaboration pave the way for a better, digitally secure world.
+        </p>
+    </section>
+    
+    <!-- Other content sections go here -->
+    <footer>
+        <p>&copy; 2023 Maxwel Okumu</p>
+    </footer>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to animate elements with fade-in
+            function animateElements() {
+                // Select elements you want to animate
+                const elementsToAnimate = document.querySelectorAll('.animate-me');
+    
+                // Iterate through each element and apply the animation
+                elementsToAnimate.forEach(function(element, index) {
+                    anime({
+                        targets: element,
+                        opacity: [0, 1], // Fade-in animation
+                        translateY: [20, 0], // You can add more properties for different animations
+                        easing: 'easeInOutQuad',
+                        duration: 800, // Animation duration in milliseconds
+                        delay: index * 200, // Delay each element for a staggered effect
+                    });
+                });
+            }
+    
+            // Call the animateElements function when the page is loaded
+            animateElements();
+        });
+    </script>
+    
+</body>
+</html>

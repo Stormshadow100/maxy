@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha256-UVqJ6G+weY5NlFsUB/gUEFkgQUsVHDJsl5qNfJz6iIQ=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/2.jpg" alt="Your Name" class="profile-photo">
+            <h1>Welcome to My Journey</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="childhood.html">Childhood</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="aspirations.html">Aspirations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="intro">
+        <h2 class="animate-me">Memorable Childhood Adventures</h2>
+        <p>
+            Nestled in the heart of Bondo, Siaya County, my childhood was a tapestry woven with unforgettable experiences, family bonds, and the magical world of technology. One of my earliest and most cherished memories revolves around my fascination with gadgets, particularly the enchanting cassette player.
+        </p>
+        <p>
+            As a child, the simple joys of dismantling and exploring the inner workings of the cassette player opened a door to a world of curiosity and discovery. This experience marked the beginning of my journey into the fascinating realm of technology.
+        </p>
+        <p>
+            Family interactions played a pivotal role in shaping not only my love for gadgets but also my character. The joyous moments spent with my adorable family became the backdrop for my explorations. Their unwavering support and encouragement transformed our home into a haven for tinkering, fixing, and learning.
+        </p>
+        <p>
+            These family interactions were more than just shared laughter and love; they became the foundation for my burgeoning technical skills. The genuine interest and pride my family took in my abilities fostered a sense of confidence and passion for technology that would stay with me throughout the years.
+        </p>
+        <p>
+            These moments, filled with the warmth of family connections and the thrill of technological exploration, shaped not only my childhood but also laid the groundwork for the person I am today. The memories of those formative years are etched in my heart as a testament to the power of family, curiosity, and the enduring magic of technology.
+        </p>
+    </section>
+    
+    <!-- Other content sections go here -->
+    <footer>
+        <p>&copy; 2023 Maxwel Okumu</p>
+    </footer>
+
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to animate elements with fade-in
+            function animateElements() {
+                // Select elements you want to animate
+                const elementsToAnimate = document.querySelectorAll('.animate-me');
+    
+                // Iterate through each element and apply the animation
+                elementsToAnimate.forEach(function(element, index) {
+                    anime({
+                        targets: element,
+                        opacity: [0, 1], // Fade-in animation
+                        translateY: [20, 0], // You can add more properties for different animations
+                        easing: 'easeInOutQuad',
+                        duration: 800, // Animation duration in milliseconds
+                        delay: index * 200, // Delay each element for a staggered effect
+                    });
+                });
+            }
+    
+            // Call the animateElements function when the page is loaded
+            animateElements();
+        });
+    </script>
+</body>
+</html>
